@@ -24,7 +24,7 @@ Run a jetty server:
 Just like [ring-jetty-adpater](https://github.com/ring-clojure/ring/tree/master/ring-jetty-adapter) but has a new option `hystrix-servlet-path` to
 export hystrix event stream. Also see [hystrix-event-stream-clj](https://github.com/josephwilk/hystrix-event-stream-clj).
 
-Also, we add two new options `connector-stats?` and `handler-stats?` to choose wheather to enable jetty [jetty statistics handler](http://www.eclipse.org/jetty/documentation/current/statistics-handler.html):
+Also, we add two new options `connector-stats?` and `handler-stats?` to choose whether to enable jetty [jetty statistics handler](http://www.eclipse.org/jetty/documentation/current/statistics-handler.html):
 
 ```clj
 (jetty/run-jetty-with-hystrix {:port 3000
