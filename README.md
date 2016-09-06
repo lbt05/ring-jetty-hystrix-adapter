@@ -27,7 +27,8 @@ export hystrix event stream. Also see [hystrix-event-stream-clj](https://github.
 Also, we add two new options `connector-stats?` and `handler-stats?` to choose whether to enable jetty [jetty statistics handler](http://www.eclipse.org/jetty/documentation/current/statistics-handler.html):
 
 ```clj
-(jetty/run-jetty-with-hystrix {:port 3000
+(jetty/run-jetty-with-hystrix app
+                              {:port 3000
                                :max-threads 10
                                :hystrix-servlet-path "/hystrix.stream"
                                :connector-stats? true
